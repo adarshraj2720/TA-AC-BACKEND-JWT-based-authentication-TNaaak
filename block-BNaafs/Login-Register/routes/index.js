@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.get('/protected',auth.verifyToken,(req,res)=>{
+router.get('/dashboard',auth.verifyToken,(req,res)=>{
   res.json({access:"protected resources"})
 })
 
